@@ -1,0 +1,22 @@
+.footer {
+  background-color: $color-dark-gray;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  & h2 {
+    color: $colour-white;
+    margin: 0 0 2rem;
+    font-family: Shrikhand, "cursive";
+    font-style: italic;
+  }
+
+  & p {
+    color: $colour-white;
+    margin: .5rem 0;
+    font-weight: bold;
+  }
+
+  & span {
+    padding-left: 1rem;
+  }
+}

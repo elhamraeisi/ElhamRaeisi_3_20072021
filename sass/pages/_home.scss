@@ -1,0 +1,137 @@
+.home {
+  &__address {
+    background: $colour-background-header;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+
+    & span {
+      padding-left: 10px;
+    }
+  }
+
+  &__banner {
+    background: $colour-background-light;
+    text-align: center;
+    padding: 40px;
+
+    & h1 {
+      padding: 10px;
+    }
+
+    & p {
+      padding: 10px;
+      line-height: 30px;
+      color: $colour-text-gray;
+    }
+  }
+
+
+  &__restaurant {
+    background-color: $colour-background-header;
+
+    & h1 {
+      text-align: left;
+      margin: 40px 0 20px 20px;
+      padding-top: 60px;
+    }
+
+    &__row {
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      @media only screen and (max-width: 800px) {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+      }
+
+      @media only screen and (min-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+      }
+
+      &__column {
+        width: 100%;
+        text-decoration: none;
+        color: $color-black;
+      }
+    }
+  }
+
+  &__anim {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: hiddenAnim 3s forwards;
+
+    &__loader {
+      position: relative;
+      top: 50%;
+
+      &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div>div {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        margin: 20px;
+        animation: bounce 1.5s 0.5s linear;
+      }
+
+      .pink {
+        background-color: $colour-secondary;
+      }
+
+      .green {
+        background-color: $colour-tertiary;
+        animation-delay: 0.1s;
+      }
+
+      .purple {
+        background-color: $colour-primary;
+        animation-delay: 0.2s;
+      }
+
+      @keyframes bounce {
+
+        100% {
+          transform: scale(1);
+        }
+
+        25% {
+          transform: scale(0.6);
+        }
+
+        75% {
+          transform: scale(1.4);
+        }
+      }
+
+      @keyframes hiddenAnim {
+        0% {
+          opacity: 1;
+        }
+
+        90% {
+          opacity: 1;
+        }
+
+        99% {
+          transform: scale(1.0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+      }
+    }
+  }
+}
