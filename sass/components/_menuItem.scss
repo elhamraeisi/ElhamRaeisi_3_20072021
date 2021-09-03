@@ -1,0 +1,61 @@
+.item {
+  display: flex;
+  margin: .5rem 0;
+  border-radius: .75rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+
+  animation: itemAppearAnim;
+  animation-duration: 1000ms;
+
+  & .option {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+    background-color: $colour-tertiary;
+    width: 0rem;
+    transition: all 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+      color: $colour-white;
+      font-size: 2rem;
+      transform: rotate(180deg);
+      transition: all 0.5s;
+    }
+  }
+
+  &:hover {
+    .item__step {
+      width: calc(100% - 5rem);
+    }
+
+    .option {
+      width: 5rem;
+
+      & i {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &__step {
+    width: 100%;
+    padding: 1.5rem;
+    transition: all 0.5s;
+  }
+
+
+  @keyframes itemAppearAnim {
+    from {
+      transform: scale(0);
+
+    }
+
+    to {
+      transform: scale(1);
+
+    }
+  }
+}
