@@ -1,0 +1,26 @@
+.heart {
+
+  & span {
+    position: relative;
+    font-size: 28px;
+
+    &:hover .fill {
+      font-size: 31px;
+      opacity: 1;
+
+      transition: all 0.5s;
+    }
+
+    & .fill {
+      position: absolute;
+      left: 50%;
+      bottom: 2px;
+      font-size: 0;
+      opacity: 0;
+      transform: translateX(-50%);
+      background: -webkit-linear-gradient(0deg, #9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

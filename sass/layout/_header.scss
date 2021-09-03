@@ -1,0 +1,13 @@
+.header {
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 $header-shadow-size rgb(0 0 0 / 25%);
+
+  & i {
+    position: absolute;
+    top: 1.5rem;
+    display: flex;
+    font-size: 1.2rem;
+    color: $color-black;
+  }
+}
