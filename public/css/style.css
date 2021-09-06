@@ -368,7 +368,7 @@ button {
   height: 20px;
   border-radius: 100%;
   margin: 20px;
-  animation: bounce 1.5s 0.5s linear;
+  animation: bounce 1.5s 0.5s linear infinite;
 }
 .home__anim__loader .pink {
   background-color: #FF79DA;
