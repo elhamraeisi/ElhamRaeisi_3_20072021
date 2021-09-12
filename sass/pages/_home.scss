@@ -1,4 +1,6 @@
 .home {
+
+  /* SECTION 1 */
   &__address {
     background: $colour-background-header;
     text-align: center;
@@ -10,6 +12,7 @@
     }
   }
 
+  /* SECTION 2 */
   &__banner {
     background: $colour-background-light;
     text-align: center;
@@ -26,7 +29,7 @@
     }
   }
 
-
+  /* SECTION 4 */
   &__restaurant {
     background-color: $colour-background-header;
 
@@ -51,13 +54,13 @@
       }
 
       &__column {
-        width: 100%;
         text-decoration: none;
         color: $color-black;
       }
     }
   }
 
+  /* LOADER */
   &__anim {
     height: 100%;
     width: 100%;
@@ -99,6 +102,7 @@
         animation-delay: 0.2s;
       }
 
+      /* SHOW ANIMATION */
       @keyframes bounce {
 
         100% {
@@ -114,6 +118,7 @@
         }
       }
 
+      /* HIDE ANIMATION */
       @keyframes hiddenAnim {
         0% {
           opacity: 1;
