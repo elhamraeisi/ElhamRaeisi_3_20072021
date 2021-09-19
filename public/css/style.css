@@ -198,6 +198,12 @@ button {
   margin: 1rem;
   display: flex;
 }
+.operation__listItem :hover {
+  background: #e4d5f6;
+}
+.operation__listItem :hover i {
+  color: #9356dc;
+}
 @media only screen and (max-width: 800px) {
   .operation__listItem {
     flex-wrap: wrap;
@@ -280,8 +286,7 @@ button {
 .footer h2 {
   color: #ffffff;
   margin: 0 0 2rem;
-  font-family: Shrikhand, "cursive";
-  font-style: italic;
+  font-family: "Shrikhand";
 }
 .footer p {
   color: #ffffff;
@@ -465,6 +470,7 @@ button {
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
+  padding-right: 1rem;
 }
 .menu__starters__description span {
   margin: auto;
